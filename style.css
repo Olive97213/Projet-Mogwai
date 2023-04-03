@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    height: 100%;
+
+}
+
+
+
+nav {
+    border: 0.4em solid;
+    height: 8em;
+    border-radius: 20em;
+
+
+}
+
+
+.container {
+    margin-left: 84%;
+    border: solid;
+    border-radius: 4em;
+    height: 100%;
+    width: 16%;
+    display: flex;
+    /* justify-content: center;
+    text-align: center;
+    align-items: center; */
+    flex-direction: column;
+
+}
+
+
+.text-center {
+    
+    /* border: solid; */
+  
+}
+
+#ville{
+    display:flex;
+    border: solid;
+    height: 80%;
+    padding-bottom:0;
+}
+
+#changer{
+    border: solid;
+    height: 20%;
+    
+}
+
+img{
+    border: solid;
+    height: 80%;
+    padding-bottom:0;
+} 
+
+
+/* 
+
+
+
+.text-center #ville {
+    border: solid;
+    height: 1em;
+    margin-top: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+*/

@@ -14,7 +14,7 @@ body {
 
 nav {
     border: 0.4em solid;
-    height: 8em;
+    height: 6em;
     border-radius: 20em;
 
 
@@ -22,60 +22,40 @@ nav {
 
 
 .container {
-    margin-left: 84%;
+    margin-left: 80%;
     border: solid;
     border-radius: 4em;
-    height: 100%;
-    width: 16%;
-    display: flex;
-    /* justify-content: center;
-    text-align: center;
-    align-items: center; */
-    flex-direction: column;
-
-}
-
-
-.text-center {
-    
-    /* border: solid; */
-  
-}
-
-#ville{
-    display:flex;
-    border: solid;
-    height: 80%;
-    padding-bottom:0;
-}
-
-#changer{
-    border: solid;
-    height: 20%;
-    
-}
-
-img{
-    border: solid;
-    height: 80%;
-    padding-bottom:0;
-} 
-
-
-/* 
-
-
-
-.text-center #ville {
-    border: solid;
-    height: 1em;
-    margin-top: 20em;
+    width: 20%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     flex-direction: column;
-    
-
 }
 
-*/
+
+#ville {
+
+    font-size: 100%;
+}
+
+#temperature {
+    font-size: x-large;
+    margin-left: 0.8em;
+}
+
+
+
+#changer {
+
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    margin-top: 0.5em;
+    border: solid;
+    width: 50%;
+    border-radius: 4em;
+    margin-left: 3.4em;
+    cursor: pointer;
+
+
+}

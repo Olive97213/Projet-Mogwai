@@ -1,14 +1,21 @@
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
+    text-decoration: none;
+
 }
 
 
 
 body {
     height: 100%;
+    width: 100%;
+    /* background-image:url(Image/mur-gremlins-long.jpg); */
 
 }
+
+/* header */
 
 
 
@@ -16,26 +23,104 @@ nav {
     border: 0.4em solid;
     height: 6em;
     border-radius: 20em;
+}
+
+.logo {
+
+    height: 100%;
+    width: 8%;
+}
+
+.image-gizmo {
+    height: 100%;
+    width: 100%;
+    /* border: solid; */
+}
+
+.menu-burger {
+    border: solid;
+    width: 5%;
+    height: 0em;
+    left: 1.5em;
+    position: relative;
+    bottom: 4em;
+    border-radius: 20em;
+    z-index: -2;
+    transition: 0.3s;
+    display: none;
+}
+
+
+.menu-burger.active {
+
+    height: 40em;
+}
+
+.nav-link {
+    position: relative;
+    /* border:solid; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    bottom: 100%;
 
 
 }
 
+ul {
+    display: flex;
+}
 
+li {
+    margin: 10%;
+}
+
+.image-lien {
+    height: 50%;
+    width: 110%;
+    margin-top: 1em;
+}
+
+.image-meteo {
+    z-index: 3;
+}
+
+
+
+
+/* API meteo */
 .container {
-    margin-left: 80%;
+    /* margin-left: 80%; */
+    height: 6.7em;
+    left: 80%;
     border: solid;
     border-radius: 4em;
     width: 20%;
-    display: flex;
+    display: none;
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    position: relative;
+    bottom: 12.6em;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.container.active{
+    height: 20em;
+    display: flex;
+
 }
 
 
 #ville {
 
     font-size: 100%;
+    margin-top: 0.5em;
+
 }
 
 #temperature {
@@ -56,6 +141,156 @@ nav {
     border-radius: 4em;
     margin-left: 3.4em;
     cursor: pointer;
+    position: relative;
+    right: 1.5em;
 
 
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* main */
+
+
+/* footer */
+
+
+
+/* media query */
+
+@media screen and (max-width: 1125px) {
+    li {
+        margin: 5%
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo {
+
+        height: 100%;
+        width: 30%;
+    }
+
+    #ville {
+
+        font-size: 80%;
+
+    }
+
+    #changer {
+
+        font-size: large;
+
+    }
+
+    .container {
+        width: 70%;
+        bottom: 6.5em;
+        left: 30%;
+        height: 250%;
+    }
+
+    
+
+    .nav-link {
+        display: none;
+
+
+    }
+
+    .image-lien{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .nav-link-two {
+        
+        /* border:solid; */
+        height: 100%;
+        width: 50%;
+        text-align: center;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+        top: 0%;
+        transition: 0.5s;
+        
+
+    }
+
+    .nav-link-two.active{
+        display: flex;
+        z-index:2;
+
+    }
+
+    ul{
+        display: block;
+    }
+
+    .menu-burger {
+        border: solid;
+        width: 15%;
+        position: relative;
+        left: 5em;
+        bottom: 4em;
+        display: flex;
+        z-index: 2;
+        
+    }
+
+    li {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .menu-burger {
+        border: solid;
+        width: 20%;
+        position: relative;
+        left: 3.3em;
+        bottom: 4em;
+
+    }
+
+    .image-lien{
+        height: 100%;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 414px) {
+
+   
+
+    li {
+        margin-top: 2em;
+    }
+
+   
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+        .menu-burger {
+            border: solid;
+            width: 20%;
+            position: relative;
+            left: 2.3em;
+            bottom: 4em;
+        }
 }

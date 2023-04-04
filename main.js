@@ -1,6 +1,10 @@
+
+
+// API meteo
+
 let ville = 'Marseille';
 
-// Afficher à l'entrée de la page une température d'une ville par défaut, ici Paris
+// Afficher à l'entrée de la page une température d'une ville par défaut, ici Marseille
 // Pour ca on appelle la fonction recevoirTemperature();
 
 recevoirTemperature(ville);
@@ -60,6 +64,43 @@ bouton.addEventListener('click', () => {
     recevoirTemperature(villeChoisie);
 })
 
+
+
+
+// menu burger
+
+const logo = document.querySelector(".logo");
+const menuBurger = document.querySelector(".menu-burger");
+const imageMeteo = document.querySelector(".image-meteo");
+const container = document.querySelector(".container");
+const navLinkTwo = document.querySelector(".nav-link-two");
+// const navLink = document.querySelector(".nav-link");
+
+
+logo.onclick = function () {
+    logo.classList.toggle("active");
+}
+
+
+logo.addEventListener("click", () => {
+
+    menuBurger.classList.toggle("active");
+    navLinkTwo.classList.toggle("active");
+   
+});
+
+
+imageMeteo.onclick = function () {
+    imageMeteo.classList.toggle("active");
+}
+
+
+imageMeteo.addEventListener("click", () => {
+
+container.classList.toggle("active");
+// navLinkTwo.classList.toggle("active");
+   
+});
 
 
 

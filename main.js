@@ -74,6 +74,7 @@ const menuBurger = document.querySelector(".menu-burger");
 const imageMeteo = document.querySelector(".image-meteo");
 const container = document.querySelector(".container");
 const navLinkTwo = document.querySelector(".nav-link-two");
+const imageMeteoTwo = document.querySelector(".image-meteo-two");
 // const navLink = document.querySelector(".nav-link");
 
 
@@ -103,4 +104,11 @@ container.classList.toggle("active");
 });
 
 
+imageMeteoTwo.onclick = function () {
+    imageMeteoTwo.classList.toggle("active");
+}
 
+
+imageMeteoTwo.addEventListener("click",() => {
+    container.classList.toggle("active");
+});

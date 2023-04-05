@@ -70,20 +70,23 @@ bouton.addEventListener('click', () => {
 // menu burger
 
 const logo = document.querySelector(".logo");
+const logoTwo = document.querySelector(".logo-two");
 const menuBurger = document.querySelector(".menu-burger");
 const imageMeteo = document.querySelector(".image-meteo");
 const container = document.querySelector(".container");
 const navLinkTwo = document.querySelector(".nav-link-two");
 const imageMeteoTwo = document.querySelector(".image-meteo-two");
+const textCenter = document.querySelector(".text-center");
+
 // const navLink = document.querySelector(".nav-link");
 
 
-logo.onclick = function () {
-    logo.classList.toggle("active");
+logoTwo.onclick = function () {
+    logoTwo.classList.toggle("active");
 }
 
 
-logo.addEventListener("click", () => {
+logoTwo.addEventListener("click", () => {
 
     menuBurger.classList.toggle("active");
     navLinkTwo.classList.toggle("active");
@@ -99,7 +102,8 @@ imageMeteo.onclick = function () {
 imageMeteo.addEventListener("click", () => {
 
 container.classList.toggle("active");
-// navLinkTwo.classList.toggle("active");
+textCenter.classList.toggle("active");
+
    
 });
 
@@ -111,4 +115,5 @@ imageMeteoTwo.onclick = function () {
 
 imageMeteoTwo.addEventListener("click",() => {
     container.classList.toggle("active");
+    textCenter.classList.toggle("active");
 });

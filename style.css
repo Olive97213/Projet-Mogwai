@@ -1,6 +1,11 @@
 :root {
     --nav-footer-color: rgb(254, 238, 131);
     --linear-gradient-nav-footer: linear-gradient(180deg, rgba(254, 238, 131, 0.7539390756302521) 30%, rgba(153, 66, 22, 0.8155637254901961) 90%);
+    --texte-color: #355C03;
+    --linear-gradient-texte: linear-gradient(to bottom, #355C03 44%, #935A04 80%);
+
+
+
 
 }
 
@@ -9,6 +14,7 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 
 }
 
@@ -20,6 +26,7 @@ body {
     height: 100%;
     width: 100%;
     background-image: url(Image/mur-gremlins-long.jpg);
+    /* overflow: hidden; */
 
 }
 
@@ -85,7 +92,8 @@ li {
 .image-lien {
     height: 50%;
     width: 110%;
-    margin-top: 1em;
+    margin-top: 1.8em;
+
 }
 
 .image-meteo {
@@ -98,7 +106,7 @@ li {
 /* API meteo */
 .container {
 
-    left: 100%;
+    left: 60%;
     border-radius: 4em;
     width: 18%;
     justify-content: center;
@@ -107,16 +115,18 @@ li {
     position: relative;
     transition: 0.5s;
     background-color: rgba(166, 223, 223, 0.74);
-
+    background-color: var(--nav-footer-color);
+    background: var(--linear-gradient-nav-footer);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    z-index: 3;
 
 }
 
 
 .container.active {
-    left: 81%;
+    left: 40%;
 }
 
 #ville {
@@ -155,8 +165,230 @@ li {
     flex-direction: column;
 }
 
+.modif {
+    border: solid;
+    height: 20%;
+    width: 20%;
+}
+
 
 /* main */
+
+/* titre */
+.titre {
+    width: 35%;
+    margin-bottom: -25em;
+    position: relative;
+    bottom: 16em;
+    left: 6em;
+    font-family: 'Gremlins', sans-serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-text-stroke: 0.7px;
+    -webkit-text-stroke-color: rgb(73, 141, 46);
+
+
+}
+
+.titre h1 {
+    width: 100%;
+    font-size: 8em;
+    background: var(--texte-color);
+    background: var(--linear-gradient-texte);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+/* carousel boostrap */
+
+.modif {
+
+    border: none;
+    width: 50%;
+    position: relative;
+    left: 47%;
+    bottom: 22em;
+    height: 0;
+
+
+
+
+}
+
+.modif-height {
+    height: 50em;
+    width: 100%;
+    border-radius: 4em;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+
+
+}
+
+.boot-image {
+
+    width: 100%;
+
+
+}
+
+/* carousel description mogwai */
+
+
+
+.slider {
+    position: relative;
+    width: 110%;
+    top: 9em;
+    left: 7em;
+
+
+}
+
+
+
+.expli-mogwai {
+
+    display: flex;
+
+
+
+
+}
+
+.expli-mogwai .font-texte {
+
+    transition: all 0.15s ease;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.font-texte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.692);
+    font-size: 1.1em;
+    font-family: 'Gremlins', sans-serif;
+    text-align: center;
+    width: 30%;
+    height: 18em;
+    border-radius: 1em;
+    -webkit-text-stroke: 0.7px;
+    -webkit-text-stroke-color: rgb(73, 141, 46);
+
+}
+
+.texte2 {
+    display: none;
+}
+
+.texte3 {
+    display: none;
+}
+
+
+.font-texte p {
+    margin: 1em;
+    background: var(--texte-color);
+    background: var(--linear-gradient-texte);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+.expli-mogwai input {
+    display: none;
+}
+
+.expli-mogwai h2 {
+    background: var(--texte-color);
+    background: var(--linear-gradient-texte);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    width: 9%;
+    position: relative;
+    bottom: 5.3em;
+    left: 9%;
+}
+
+.dots label {
+
+
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 1em;
+
+
+
+
+}
+
+label img {
+
+    width: 100%;
+}
+
+.dots label:hover {
+    scale: 2;
+}
+
+#t1:checked~.texte1 {
+    margin-left: 0%;
+}
+
+#t2:checked~.texte2 {
+    margin-left: 0%;
+    display: flex;
+}
+
+#t3:checked~.texte3 {
+    margin-left: 0%;
+    display: flex;
+}
+
+
+#t2:checked~.texte1 {
+    display: none;
+}
+
+#t3:checked~.texte1 {
+    display: none;
+}
+
+.resp-expli-mogwai {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer */
@@ -167,8 +399,112 @@ li {
 
 
 
+@media screen and (max-width: 1440px) {
+
+    /* responsive titre */
+    .titre {
+        width: 40%;
+        bottom: 25em;
+        left: 6em;
+        font-size: 0.8em;
+    }
+
+
+    /* responsive carousel description mogwai */
+
+    .slider {
+
+        width: 150%;
+        top: 3em;
+        left: 4em;
+    }
+
+    .font-texte {
+
+        font-size: 1em;
+        height: 15em;
+
+
+    }
+
+    .font-texte p {
+        margin-bottom: 1.5em;
+
+    }
+
+    .expli-mogwai h2 {
+        margin: -0.5em;
+
+    }
+
+    .dots {
+
+        width: 8%;
+        bottom: 5em;
+        left: 10%;
+    }
+}
+
+/* responsive carousel bootsrap */
+
+.modif-height {
+    height: 38em;
+    width: 90%;
+    left: 12%;
+}
+
+/* responsive API */
+.container {
+    left: 62%;
+    width: 22%;
+}
+
+.container.active {
+    left: 38%;
+}
+
+
+
+@media screen and (max-width: 1238px) {
+    .dots {
+
+        width: 9%;
+        bottom: 4.5em;
+        left: 9%;
+    }
+
+}
+
+
+@media screen and (max-width: 1140px) {
+    /* responsive carousel description mogwai */
+
+    .slider {
+
+        width: 150%;
+        top: 4em;
+    }
+
+    .font-texte {
+
+        font-size: 0.9em;
+        height: 15em;
+
+
+    }
+
+    .dots {
+
+        width: 10%;
+        bottom: 4.6em;
+        left: 9%;
+    }
+
+}
+
 @media screen and (max-width: 800px) {
 
+    /* responsive navbar */
     .logo-two {
         position: relative;
         bottom: 15em;
@@ -199,15 +535,14 @@ li {
         width: 30%;
         position: relative;
         height: 250%;
+        left: 69%;
         display: flex;
 
     }
 
     .container.active {
-        left: 69%;
+        left: 37%;
     }
-
-
 
 
     .image-lien {
@@ -256,7 +591,7 @@ li {
         position: relative;
         bottom: 12em;
         border-radius: 20em;
-        z-index: 2;
+        z-index: 5;
         transition: 0.3s;
         display: flex;
         background-color: var(--nav-footer-color);
@@ -271,10 +606,50 @@ li {
 
         width: 15%;
     }
+
+    /* responsive carousel bootsrap */
+
+    .modif-height {
+        height: 40em;
+        width: 150%;
+        left: -70%;
+        bottom: 26em;
+
+    }
+
+    /* responsive expli mogwai */
+   
+    .slider{
+        display:none;
+    }
+   
+    .resp-expli-mogwai {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 35em;
+        font-size: 0.9em;
+        left: 4%;
+
+    }
+
 }
+
+
+
+/* responsive titre */
+
+.titre {
+    width: 78%;
+    bottom: 109em;
+    left: 11em;
+    font-size: 0.6em;
+}
+
 
 @media screen and (max-width: 540px) {
 
+    /* responsive navbar */
     .menu-burger {
 
         left: -0.5em;
@@ -300,6 +675,7 @@ li {
 
 @media screen and (max-width: 414px) {
 
+    /* responsive navbar */
     li {
         margin-top: 2em;
     }
@@ -314,6 +690,7 @@ li {
 
 @media screen and (max-width: 375px) {
 
+    /* responsive navbar */
     .menu-burger {
         border: solid;
         position: relative;

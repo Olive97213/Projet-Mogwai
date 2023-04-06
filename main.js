@@ -117,3 +117,6 @@ imageMeteoTwo.addEventListener("click",() => {
     container.classList.toggle("active");
     textCenter.classList.toggle("active");
 });
+
+// courousel
+

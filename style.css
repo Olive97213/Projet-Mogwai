@@ -43,6 +43,7 @@ nav {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    
 
 }
 
@@ -212,7 +213,7 @@ li {
     position: relative;
     left: 47%;
     bottom: 22em;
-    height: 0;
+    height: 0em;
 
 
 
@@ -333,13 +334,9 @@ li {
 
 .dots label {
 
-
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 1em;
-
-
-
 
 }
 
@@ -378,6 +375,189 @@ label img {
 .resp-expli-mogwai {
     display: none;
 }
+
+
+/* elec gremlins */
+
+.foudre{
+    
+    border: solid;
+    position: relative;
+    bottom: 60em;
+    z-index: -2;
+    
+}
+
+.foudre img{
+    width: 100%;
+    
+}
+
+.elec-grem{
+    position: relative;
+    bottom: 135em;
+    right: 4em;
+    z-index: -2;
+    
+}
+
+.elec-grem img {
+    width: 15%;
+    
+}
+
+/* carousel trois regles */
+
+.slider-two{
+    position: relative;
+    width: 100%;
+    bottom: 138em;
+    left: 23em;
+}
+
+.slider-two .font-texte{
+    
+   
+    background-color: rgba(255, 255, 255, 0.692);
+    font-size: 1.5em;
+    font-family: 'Gremlins', sans-serif;
+    text-align: center;
+    width: 60%;
+    height: 10em;
+    border-radius: 2em;
+    -webkit-text-stroke: 0.7px;
+    -webkit-text-stroke-color: rgb(73, 141, 46);
+
+}
+
+.trois-regle{
+    display: flex;
+}
+
+.trois-regle .font-texte {
+
+    transition: all 0.15s ease;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.trois-regle p {
+    font-size: 1em;
+    margin: 1em;
+    background: var(--texte-color);
+    background: var(--linear-gradient-texte);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider-two .dots-two {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    width: 100%;
+    position: relative;
+    left: -21%;
+    bottom: 5.3em;
+    
+}
+
+.trois-regle input {
+    display: none;
+}
+
+.texte-2 {
+    display: none;
+}
+
+.texte-3 {
+    display: none;
+}
+.texte-4 {
+    display: none;
+}
+.texte-5 {
+    display: none;
+}
+
+
+
+.dots-two label img {
+
+    width: 2em;
+    
+}
+
+.dots-two label:hover {
+    scale: 2;
+}
+
+#t-1:checked~.texte-1 {
+    margin-left: 0%;
+}
+
+#t-2:checked~.texte-2 {
+    margin-left: 0%;
+    display: flex;
+}
+
+#t-3:checked~.texte-3 {
+    margin-left: 0%;
+    display: flex;
+}
+#t-4:checked~.texte-4 {
+    margin-left: 0%;
+    display: flex;
+}
+#t-5:checked~.texte-5 {
+    margin-left: 0%;
+    display: flex;
+}
+
+
+#t-2:checked~.texte-1 {
+    display: none;
+}
+
+#t-3:checked~.texte-1 {
+    display: none;
+}
+#t-4:checked~.texte-1 {
+    display: none;
+}
+#t-5:checked~.texte-1 {
+    display: none;
+}
+
+/* achat mogwai */
+
+.titre-achat{
+    width: 40%;
+    margin-bottom: -25em;
+    position: relative;
+    bottom: 139em;
+    left: 35em;
+    font-family: 'Gremlins', sans-serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-text-stroke: 0.7px;
+    -webkit-text-stroke-color: rgb(73, 141, 46);
+}
+
+
+.titre-achat h2 {
+    width: 100%;
+    font-size: 8em;
+    background: var(--texte-color);
+    background: var(--linear-gradient-texte);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
 
 
 
@@ -461,6 +641,24 @@ label img {
 
 .container.active {
     left: 38%;
+}
+
+.dots-two {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    width: 9%;
+    position: relative;
+    bottom: 5.3em;
+    left: 9%;
+}
+
+.dots-two label {
+
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 1em;
+
 }
 
 
@@ -632,12 +830,8 @@ label img {
         left: 4%;
 
     }
-
-}
-
-
-
-/* responsive titre */
+    
+    /* responsive titre */
 
 .titre {
     width: 78%;
@@ -645,6 +839,12 @@ label img {
     left: 11em;
     font-size: 0.6em;
 }
+
+}
+
+
+
+
 
 
 @media screen and (max-width: 540px) {
